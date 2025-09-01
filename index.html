@@ -4,50 +4,130 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Susweta Writes</title>
-  <link rel="stylesheet" href="style.css">
+  <style>
+    /* ---------- COLORS ---------- */
+    :root {
+      --background: #f9f5ef;       /* very light beige */
+      --primary: #592720;          /* caput mortuum */
+      --text: #2e2e2e;             /* dark charcoal for readability */
+      --card-bg: #ffffff;          /* slightly lifted white for cards */
+    }
+
+    /* ---------- GLOBAL ---------- */
+    body {
+      font-family: "Georgia", serif;
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1, h2, h3 {
+      color: var(--primary);
+    }
+
+    /* ---------- HEADER ---------- */
+    header {
+      background: var(--primary);
+      color: #fff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.2em;
+      opacity: 0.9;
+    }
+
+    /* ---------- SECTIONS ---------- */
+    section {
+      margin: 50px 0;
+    }
+
+    /* ---------- CARDS ---------- */
+    .card {
+      background: var(--card-bg);
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 14px;
+      background: var(--primary);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    .card a:hover {
+      background: #401a15; /* darker caput mortuum */
+    }
+
+    /* ---------- FOOTER ---------- */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: var(--primary);
+      color: #fff;
+      margin-top: 40px;
+    }
+  </style>
 </head>
 <body>
-  <!-- HEADER -->
+  <!-- Header -->
   <header>
     <h1>Susweta Writes</h1>
     <p>Professional & Creative Content Writing</p>
   </header>
 
-  <!-- ABOUT -->
-  <section class="about">
+  <!-- About Section -->
+  <section id="about" class="container">
     <h2>About Me</h2>
     <p>
-      Welcome to my portfolio. I write both professional and creative content — 
+      Welcome to my portfolio. I write both professional and creative content —
       blending clarity, depth, and imagination. Here you’ll find samples of my work.
     </p>
   </section>
 
-  <!-- WRITINGS -->
-  <section class="writings">
+  <!-- Writings Section -->
+  <section id="writings" class="container">
     <h2>My Writings</h2>
-
     <div class="card">
       <h3>Sample Title 1</h3>
       <p>This is a short description of the writing piece. It can be professional, creative, or personal.</p>
       <a href="#">Read More</a>
     </div>
-
     <div class="card">
       <h3>Sample Title 2</h3>
       <p>A quick summary of another writing piece goes here. You can replace it with your own text.</p>
       <a href="#">Read More</a>
     </div>
-
-    <div class="card">
-      <h3>Sample Title 3</h3>
-      <p>A teaser for your creative writing, essay, or article. Replace this with your real work later.</p>
-      <a href="#">Read More</a>
-    </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- Footer -->
   <footer>
-    <p>© 2025 Susweta Roy | Built with ❤️</p>
+    <p>© 2025 Susweta Writes</p>
   </footer>
 </body>
 </html>
