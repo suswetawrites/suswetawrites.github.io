@@ -3,106 +3,101 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Susweta Roy </title>
+  <title>Susweta Roy | Portfolio</title>
   <style>
-    /* ---------- COLORS ---------- */
-    :root {
-      --background: #f9f5ef;       /* very light beige */
-      --primary: #592720;          /* caput mortuum */
-      --text: #2e2e2e;             /* dark charcoal for readability */
-      --card-bg: #ffffff;          /* slightly lifted white for cards */
-    }
-
-    /* ---------- GLOBAL ---------- */
     body {
-      font-family: "The Times Roman", serif;
+      font-family: Times New Roman, serif;
       margin: 0;
-      background: var(--background);
-      color: var(--text);
-      line-height: 1.6;
+      padding: 0;
+      background-color: #fdf6ec; /* light beige */
+      color: #333;
     }
 
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-
-    h1, h2, h3 {
-      color: var(--primary);
-    }
-
-    /* ---------- HEADER ---------- */
     header {
-      background: var(--primary);
-      color: #fff;
-      padding: 60px 20px;
       text-align: center;
+      padding: 80px 20px;
+      background: #6e1e2d; /* caput mortuum */
+      color: #fff;
     }
 
     header h1 {
-      margin: 0;
-      font-size: 2.5em;
+      font-size: 3em;
+      margin-bottom: 10px;
+      font-family: Georgia, serif;
+      color: #fff;
     }
 
     header p {
-      margin-top: 10px;
-      font-size: 1.2em;
-      opacity: 0.9;
+      font-size: 1.3em;
+      margin: 0;
+      font-style: italic;
+      color: #fff;
     }
 
-    /* ---------- SECTIONS ---------- */
     section {
-      margin: 50px 0;
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
     }
 
-    /* ---------- CARDS ---------- */
+    h2 {
+      border-bottom: 2px solid #6e1e2d;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+      color: #6e1e2d;
+    }
+
     .card {
-      background: var(--card-bg);
+      background: #fff;
+      border: 1px solid #ddd;
       border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
       padding: 20px;
       margin-bottom: 20px;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
     }
 
     .card h3 {
       margin-top: 0;
+      color: #6e1e2d;
     }
 
-    .card a {
+    .button {
       display: inline-block;
-      margin-top: 10px;
-      padding: 8px 14px;
-      background: var(--primary);
+      padding: 10px 15px;
+      background: #6e1e2d;
       color: #fff;
       text-decoration: none;
       border-radius: 5px;
-      transition: background 0.3s ease;
+      margin-top: 10px;
     }
 
-    .card a:hover {
-      background: #401a15; /* darker caput mortuum */
+    .button:hover {
+      background: #8b2a3f;
     }
 
-    /* ---------- FOOTER ---------- */
     footer {
       text-align: center;
       padding: 20px;
-      background: var(--primary);
+      background: #6e1e2d;
       color: #fff;
       margin-top: 40px;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: underline;
+      margin: 0 5px;
     }
   </style>
 </head>
 <body>
-  <!-- Header -->
+
   <header>
     <h1>Susweta Roy</h1>
     <p>Professional & Creative Content Writing</p>
   </header>
 
-  <!-- About Section -->
-  <section id="about" class="container">
+  <section>
     <h2>About Me</h2>
     <p>
       Welcome to my portfolio. I write both professional and creative content —
@@ -110,24 +105,35 @@
     </p>
   </section>
 
-  <!-- Writings Section -->
-  <section id="writings" class="container">
+  <section>
     <h2>My Writings</h2>
+
     <div class="card">
       <h3>Sample Title 1</h3>
       <p>This is a short description of the writing piece. It can be professional, creative, or personal.</p>
-      <a href="#">Read More</a>
+      <a href="writing1.html" class="button">Read More</a>
     </div>
+
     <div class="card">
       <h3>Sample Title 2</h3>
-      <p>A quick summary of another writing piece goes here. You can replace it with your own text.</p>
-      <a href="#">Read More</a>
+      <p>A glimpse into another piece of writing. Click to read the full text on a separate page.</p>
+      <a href="writing2.html" class="button">Read More</a>
+    </div>
+
+    <div class="card">
+      <h3>Sample Title 3</h3>
+      <p>Another example of my writing style. Each sample will have its own dedicated page.</p>
+      <a href="writing3.html" class="button">Read More</a>
     </div>
   </section>
 
-  <!-- Footer -->
   <footer>
-    <p>© 2025 Susweta Writes</p>
+    <p>© 2025 Susweta Roy | All Rights Reserved</p>
+    <p>
+      <a href="https://www.linkedin.com/in/susweta-roy23 target="_blank">LinkedIn</a> |
+      <a href="mailto:suswetaroy23@gmail.com">Email</a>
+    </p>
   </footer>
+
 </body>
 </html>
