@@ -1,46 +1,99 @@
-body {
-  font-family: 'Georgia', serif;
-  margin: 0;
-  background: #f9f9f7;
-  color: #111111;
+/* Color Palette */
+:root {
+  --dark: #25344F;        /* Space Cadet */
+  --gray: #617891;        /* Slate Gray */
+  --tan: #D5B893;         /* Tan */
+  --coffee: #6F4D38;      /* Coffee */
+  --accent: #632024;      /* Caput Mortuum */
 }
 
+/* General Styles */
+body {
+  font-family: "Georgia", serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--tan);
+  color: var(--dark);
+  line-height: 1.6;
+}
+
+/* Header */
 header {
-  background: #25344f; /* Space Cadet */
-  color: #ffffff;
-  padding: 2rem;
+  background-color: var(--accent);
+  color: white;
   text-align: center;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  margin: 0.5rem 0 0;
+  font-size: 1.2rem;
+}
+
+/* Section Headings */
+section {
+  padding: 2rem 1rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+section h2 {
+  color: var(--accent);
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* About */
+.about p {
+  font-size: 1.1rem;
+}
+
+/* Writings */
+.writings {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
 }
 
 .card {
-  background: #ffffff;
-  color: #111111;
-  padding: 1.5rem;
-  margin: 1rem auto;
-  border-radius: 12px;
-  max-width: 800px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-
-a, button {
-  background: #632024; /* Caput Mortuum */
-  color: #ffffff;
-  padding: 0.6rem 1.2rem;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: bold;
-  display: inline-block;
-  transition: 0.3s ease;
-}
-
-a:hover, button:hover {
-  background: #6f4d38; /* Coffee */
-}
-
-footer {
-  background: #25344f; /* Space Cadet */
-  color: #d5b893; /* Tan */
+  background: white;
+  border: 1px solid var(--gray);
+  border-radius: 8px;
   padding: 1rem;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: var(--coffee);
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: var(--accent);
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.card a:hover {
+  background: var(--coffee);
+}
+
+/* Footer */
+footer {
   text-align: center;
-  font-size: 0.9rem;
+  background: var(--dark);
+  color: white;
+  padding: 1rem;
+  margin-top: 2rem;
 }
