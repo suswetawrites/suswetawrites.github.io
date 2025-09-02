@@ -110,10 +110,14 @@
       text-align: center;
       box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
       transition: transform 0.3s;
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
     }
 
     .skill-box:hover {
       transform: scale(1.05);
+      background: #f5ece6;
     }
 
     .skill-box span {
@@ -200,19 +204,17 @@
     <a href="javascript:void(0)" class="close-btn" onclick="closeMenu()">×</a>
     <a href="index.html">Home</a>
     <a href="archives.html">Archives</a>
-    <a href="index.html#contact">Contact Me</a>
+    <a href="contact.html">Contact Me</a>
   </div>
 
   <!-- ABOUT ME -->
   <section>
     <h2>About Me</h2>
     <div class="about-flex">
-      <img src="profile.jpg" alt="Susweta Roy" 
-     style="width:180px; height:180px; border-radius: 50%; object-fit: cover; 
-            box-shadow: 0 4px 8px rgba(0,0,0,0.2);">
+      <img src="profile.jpg" alt="Susweta Roy">
       <div>
         <p>
-          Hi, I’m <strong>Susweta Roy</strong> — a writer and a graduate of B.A.(HONS) English Literature at 
+          Hi, I’m <strong>Susweta Roy</strong> — a writer and student of English Literature at 
           <em>Dwijendralal College</em>, University of Kalyani. My work spans academic, 
           creative, and professional writing, where I aim to blend clarity, depth, 
           and imagination.
@@ -228,7 +230,7 @@
           Fluent in English, Bengali, and Hindi, I enjoy exploring literature, public 
           speaking, and the art of communication.
         </p>
-        <a href="RESUME.docx" class="button" target="_blank">View My Resume</a>
+        <a href="RESUME.pdf" class="button" target="_blank">View My Resume</a>
       </div>
     </div>
   </section>
@@ -247,22 +249,22 @@
   <section>
     <h2>What I Write</h2>
     <div class="skills">
-      <div class="skill-box">
+      <a href="archives.html" class="skill-box">
         <span>✍️</span>
         Articles & Blogs
-      </div>
-      <div class="skill-box">
+      </a>
+      <a href="volatilepages.substack.com" target="_blank" class="skill-box">
         <span>🎭</span>
         Creative Writing
-      </div>
-      <div class="skill-box">
+      </a>
+      <a href="essays.html" class="skill-box">
         <span>📚</span>
         Essays & Research
-      </div>
-      <div class="skill-box">
+      </a>
+      <a href="professional.html" class="skill-box">
         <span>💼</span>
         Professional Content
-      </div>
+      </a>
     </div>
   </section>
 
