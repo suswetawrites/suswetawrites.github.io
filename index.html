@@ -9,29 +9,29 @@
       font-family: Times New Roman, serif;
       margin: 0;
       padding: 0;
-      background-color: #fdf6ec; /* light beige */
+      background-color: #fdf6ec;
       color: #333;
     }
 
+    /* HEADER */
     header {
       text-align: center;
       padding: 80px 20px;
-      background: #3b0a07; /* caput mortuum */
+      background: #3b0a07;
       color: #fff;
+      position: relative;
     }
 
     header h1 {
       font-size: 3em;
       margin-bottom: 10px;
       font-family: Georgia, serif;
-      color: #fff;
     }
 
     header p {
       font-size: 1.3em;
       margin: 0;
       font-style: italic;
-      color: #fff;
     }
 
     section {
@@ -47,34 +47,24 @@
       color: #6e1e2d;
     }
 
-    .card {
-      background: #fff;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      padding: 20px;
-      margin-bottom: 20px;
-      box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
-    }
-
-    .card h3 {
-      margin-top: 0;
-      color: #6e1e2d;
-    }
-
+    /* BUTTON STYLE */
     .button {
       display: inline-block;
-      padding: 10px 15px;
+      padding: 10px 18px;
       background: #6e1e2d;
       color: #fff;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 6px;
       margin-top: 10px;
+      transition: all 0.3s ease;
     }
 
     .button:hover {
       background: #8b2a3f;
+      transform: scale(1.05);
     }
 
+    /* FOOTER */
     footer {
       text-align: center;
       padding: 20px;
@@ -88,52 +78,106 @@
       text-decoration: underline;
       margin: 0 5px;
     }
+
+    /* SLIDER MENU */
+    .menu-btn {
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      font-size: 28px;
+      cursor: pointer;
+      color: #fff;
+      background: none;
+      border: none;
+    }
+
+    .side-menu {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #3b0a07;
+      overflow-x: hidden;
+      transition: 0.3s;
+      padding-top: 60px;
+      z-index: 1000;
+    }
+
+    .side-menu a {
+      padding: 10px 20px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #fff;
+      display: block;
+      transition: 0.2s;
+    }
+
+    .side-menu a:hover {
+      background: #6e1e2d;
+    }
+
+    .side-menu .close-btn {
+      position: absolute;
+      top: 15px;
+      right: 25px;
+      font-size: 36px;
+      color: #fff;
+      cursor: pointer;
+    }
   </style>
 </head>
 <body>
 
+  <!-- HEADER -->
   <header>
+    <button class="menu-btn" onclick="openMenu()">☰</button>
     <h1>Susweta Roy</h1>
     <p>Professional & Creative Content Writing</p>
   </header>
 
+  <!-- SIDE MENU -->
+  <div id="sideMenu" class="side-menu">
+    <a href="javascript:void(0)" class="close-btn" onclick="closeMenu()">×</a>
+    <a href="index.html">Home</a>
+    <a href="archives.html">Archives</a>
+    <a href="#contact">Contact Me</a>
+  </div>
+
+  <!-- ABOUT -->
   <section>
     <h2>About Me</h2>
     <p>
       Welcome to my portfolio. I write both professional and creative content —
-      blending clarity, depth, and imagination. Here you’ll find samples of my work.
+      blending clarity, depth, and imagination. Explore my <a href="archives.html" class="button">Archives</a> to see my writings.
     </p>
   </section>
 
-  <section>
-    <h2>My Writings</h2>
-
-    <div class="card">
-      <h3>Struggle with PMDD and its Solutions</h3>
-      <p>Struggling with PMDD symptoms? Learn the causes, challenges, and effective solutions for Premenstural Dysphoric Disorder to regain balance and wellbeing.</p>
-      <a href="post1.html" class="btn">Read More</a>
-    </div>
-
-    <div class="card">
-      <h3>Sample Title 2</h3>
-      <p>A glimpse into another piece of writing. Click to read the full text on a separate page.</p>
-      <a href="writing2.html" class="button">Read More</a>
-    </div>
-
-    <div class="card">
-      <h3>Sample Title 3</h3>
-      <p>Another example of my writing style. Each sample will have its own dedicated page.</p>
-      <a href="writing3.html" class="button">Read More</a>
-    </div>
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>If you’d like to collaborate or discuss writing projects, feel free to reach out.</p>
+    <a href="mailto:suswetaroy23@gmail.com" class="button">Email Me</a>
+    <a href="https://www.linkedin.com/in/susweta-roy23/" target="_blank" class="button">LinkedIn</a>
   </section>
 
+  <!-- FOOTER -->
   <footer>
     <p>© 2025 Susweta Roy | All Rights Reserved</p>
     <p>
-      <a href="https://www.linkedin.com/in/susweta-roy23/"_blank">LinkedIn</a> |
+      <a href="https://www.linkedin.com/in/susweta-roy23/" target="_blank">LinkedIn</a> |
       <a href="mailto:suswetaroy23@gmail.com">Email</a>
     </p>
   </footer>
+
+  <script>
+    function openMenu() {
+      document.getElementById("sideMenu").style.width = "250px";
+    }
+    function closeMenu() {
+      document.getElementById("sideMenu").style.width = "0";
+    }
+  </script>
 
 </body>
 </html>
