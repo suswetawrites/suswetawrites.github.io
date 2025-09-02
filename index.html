@@ -47,6 +47,21 @@
       color: #6e1e2d;
     }
 
+    /* CARD STYLE */
+    .card {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      margin: 20px 0;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #6e1e2d;
+    }
+
     /* BUTTON STYLE */
     .button {
       display: inline-block;
@@ -62,6 +77,34 @@
     .button:hover {
       background: #8b2a3f;
       transform: scale(1.05);
+    }
+
+    /* SKILLS GRID */
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .skill-box {
+      background: #fff;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .skill-box:hover {
+      transform: scale(1.05);
+    }
+
+    .skill-box span {
+      font-size: 2em;
+      display: block;
+      margin-bottom: 10px;
+      color: #6e1e2d;
     }
 
     /* FOOTER */
@@ -141,7 +184,7 @@
     <a href="javascript:void(0)" class="close-btn" onclick="closeMenu()">×</a>
     <a href="index.html">Home</a>
     <a href="archives.html">Archives</a>
-    <a href="#contact">Contact Me</a>
+    <a href="index.html#contact">Contact Me</a>
   </div>
 
   <!-- ABOUT -->
@@ -149,16 +192,41 @@
     <h2>About Me</h2>
     <p>
       Welcome to my portfolio. I write both professional and creative content —
-      blending clarity, depth, and imagination. Explore my <a href="archives.html" class="button">Archives</a> to see my writings.
+      blending clarity, depth, and imagination.
     </p>
   </section>
 
-  <!-- CONTACT -->
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <p>If you’d like to collaborate or discuss writing projects, feel free to reach out.</p>
-    <a href="mailto:suswetaroy23@gmail.com" class="button">Email Me</a>
-    <a href="https://www.linkedin.com/in/susweta-roy23/" target="_blank" class="button">LinkedIn</a>
+  <!-- FEATURED WORK -->
+  <section>
+    <h2>Featured Work</h2>
+    <div class="card">
+      <h3>Struggle with PMDD and its Solutions</h3>
+      <p>A deep dive into the challenges of Premenstrual Dysphoric Disorder and how to cope with it.</p>
+      <a href="archives.html" class="button">Explore Archives</a>
+    </div>
+  </section>
+
+  <!-- SKILLS/GENRES -->
+  <section>
+    <h2>What I Write</h2>
+    <div class="skills">
+      <div class="skill-box">
+        <span>✍️</span>
+        Articles & Blogs
+      </div>
+      <div class="skill-box">
+        <span>🎭</span>
+        Creative Writing
+      </div>
+      <div class="skill-box">
+        <span>📚</span>
+        Essays & Research
+      </div>
+      <div class="skill-box">
+        <span>💼</span>
+        Professional Content
+      </div>
+    </div>
   </section>
 
   <!-- FOOTER -->
