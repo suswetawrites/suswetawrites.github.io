@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Susweta Roy</title>
+  <style>
+    body {
+      font-family: Times New Roman, serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fdf6ec;
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      background: #3b0a07;
+      color: #fff;
+      position: relative;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+      font-family: Georgia, serif;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 20px;
+      background: #6e1e2d;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      margin: 10px;
+      transition: all 0.3s ease;
+    }
+
+    .button:hover {
+      background: #8b2a3f;
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #6e1e2d;
+      color: #fff;
+      margin-top: 40px;
+    }
+
+    footer a {
+      color: #fff;
+      text-decoration: underline;
+      margin: 0 5px;
+    }
+
+    /* SLIDER MENU */
+    .menu-btn {
+      position: absolute;
+      left: 20px;
+      top: 20px;
+      font-size: 28px;
+      cursor: pointer;
+      color: #fff;
+      background: none;
+      border: none;
+    }
+
+    .side-menu {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #3b0a07;
+      overflow-x: hidden;
+      transition: 0.3s;
+      padding-top: 60px;
+      z-index: 1000;
+    }
+
+    .side-menu a {
+      padding: 10px 20px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #fff;
+      display: block;
+      transition: 0.2s;
+    }
+
+    .side-menu a:hover {
+      background: #6e1e2d;
+    }
+
+    .side-menu .close-btn {
+      position: absolute;
+      top: 15px;
+      right: 25px;
+      font-size: 36px;
+      color: #fff;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <button class="menu-btn" onclick="openMenu()">☰</button>
+    <h1>Contact Me</h1>
+  </header>
+
+  <!-- SIDE MENU -->
+  <div id="sideMenu" class="side-menu">
+    <a href="javascript:void(0)" class="close-btn" onclick="closeMenu()">×</a>
+    <a href="index.html">Home</a>
+    <a href="archives.html">Archives</a>
+    <a href="contact.html">Contact Me</a>
+  </div>
+
+  <!-- CONTACT SECTION -->
+  <section>
+    <h2>Get in Touch</h2>
+    <p>You can reach me through the links below:</p>
+    <a href="mailto:suswetaroy23@gmail.com" class="button">Email Me</a>
+    <a href="https://www.linkedin.com/in/susweta-roy23/" target="_blank" class="button">LinkedIn</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Susweta Roy | All Rights Reserved</p>
+    <p>
+      <a href="https://www.linkedin.com/in/susweta-roy23/" target="_blank">LinkedIn</a> |
+      <a href="mailto:suswetaroy23@gmail.com">Email</a>
+    </p>
+  </footer>
+
+  <script>
+    function openMenu() {
+      document.getElementById("sideMenu").style.width = "250px";
+    }
+    function closeMenu() {
+      document.getElementById("sideMenu").style.width = "0";
+    }
+  </script>
+
+</body>
+</html>
