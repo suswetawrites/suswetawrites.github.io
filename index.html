@@ -47,6 +47,22 @@
       color: #6e1e2d;
     }
 
+    /* FLEX ABOUT ME */
+    .about-flex {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .about-flex img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
     /* CARD STYLE */
     .card {
       background: #fff;
@@ -187,13 +203,32 @@
     <a href="index.html#contact">Contact Me</a>
   </div>
 
-  <!-- ABOUT -->
+  <!-- ABOUT ME -->
   <section>
     <h2>About Me</h2>
-    <p>
-      Welcome to my portfolio. I write both professional and creative content —
-      blending clarity, depth, and imagination.
-    </p>
+    <div class="about-flex">
+      <img src="images/profile.jpg" alt="Susweta Roy">
+      <div>
+        <p>
+          Hi, I’m <strong>Susweta Roy</strong> — a writer and student of English Literature at 
+          <em>Dwijendralal College</em>, University of Kalyani. My work spans academic, 
+          creative, and professional writing, where I aim to blend clarity, depth, 
+          and imagination.
+        </p>
+        <p>
+          I’ve conducted independent research on Victorian literature, volunteered in 
+          academic events, and actively contributed to debates and cultural programs. 
+          I have been recognized with multiple awards in both academics and debating.
+        </p>
+        <p>
+          My skills include research writing, creative storytelling, event coordination, 
+          and digital tools like Microsoft Office, Google Docs, and WordPress.  
+          Fluent in English, Bengali, and Hindi, I enjoy exploring literature, public 
+          speaking, and the art of communication.
+        </p>
+        <a href="RESUME.docx" class="button" target="_blank">View My Resume</a>
+      </div>
+    </div>
   </section>
 
   <!-- FEATURED WORK -->
@@ -206,7 +241,7 @@
     </div>
   </section>
 
-  <!-- SKILLS/GENRES -->
+  <!-- SKILLS -->
   <section>
     <h2>What I Write</h2>
     <div class="skills">
