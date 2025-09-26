@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An article for Project BachpanShala, an initiative of the InAmigos Foundation, nurturing childhood through education, healthcare, and safe spaces.">
+    <title>Article for Project BachpanShala</title>
+    <style>
+        body {
+            font-family: Times New Roman, serif;
+            line-height: 1.6;
+            background-color: #fdf7f0; /* soft beige */
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px; /* keeps text readable */
+            margin: 0 auto;   /* centers container */
+            padding: 20px;
+        }
+        h1, h2, h3 {
+            color: #7b3f00; /* caput mortuum color */
+            text-align: center; /* center headers */
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-top: 25px;
+        }
+        h3 {
+            font-size: 1.2em;
+            margin-top: 15px;
+        }
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        ol {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        p {
+            margin-bottom: 15px;
+            text-align: justify; /* keeps paragraph alignment neat */
+        }
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .cta, .btn {
+            display: inline-block;
+            background-color: #7b3f00; /* caput mortuum */
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            border-radius: 5px; /* slightly rounded corners */
+            margin: 10px auto;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .cta, .btn:hover {
+            background-color: #5a2d00; /* darker shade on hover */
+        }
+        .cta {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Article for Project BachpanShala</h1>
+
+        <p>Childhood doesn’t wait; neither should dreams.</p>
+
+        <p>Childhood, as fragile and fleeting as it is, is often taken for granted: celebrated in textbooks, recited in policy documents, yet rarely experienced in its full vibrancy by those who most need it.</p>
+
+        <p>BachpanShala, an initiative of the InAmigos Foundation, intervenes in this quiet tragedy, offering children lessons in living alongside lessons in reading and arithmetic. I am reminded, as I reflect upon this, of afternoons wandering through sunlit streets of my own youth; moments of curiosity and wonder that were never dictated by structure or compulsion, yet remain inaccessible to many.</p>
+
+        <p>At BachpanShala, children are nurtured through education that excites, healthcare that sustains, and safe spaces that encourage self-expression. Mentorship programs, skill-building workshops, and community engagement reignite curiosity, foster confidence, and allow dreams to germinate in soil previously barren. Each activity and every gesture becomes a quiet act of resistance against circumstances that seek to limit potential.</p>
+
+        <p>Supporting BachpanShala is not charity; it is a recognition that childhood, in its purest form, is a right, not a privilege. Volunteering, donating, or amplifying this cause allows us, as participants in this journey, to rewrite futures, one child at a time.</p>
+
+        <p>I find, in this work, a profound sense of gratitude and awe: gratitude for what we can give; awe at the resilience of children; and hope that life, despite its unpredictability, can flourish.</p>
+
+        <p class="cta">Support Project BachpanShala—because every child deserves a childhood full of dreams.</p>
+
+        <p style="text-align:center;">
+            <a href="index.html" class="btn">Back to Home</a>
+        </p>
+
+    </div>
+
+</body>
+</html>
